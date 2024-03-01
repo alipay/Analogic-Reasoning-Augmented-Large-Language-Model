@@ -1,0 +1,12 @@
+[
+    {
+        "instruction":"I am an marketer. Given a natural language demand, please convert it into a logical expression. A logical expression is composed of multiple conditional expressions, separated by 'AND' and 'OR'. Each conditional expression is composed of key, operator, and value. The list of operators between keys and values is [Belongs To, Not Belongs To, Equal To, Not Equal To, Greater Than, Less Than, Between]. The key, operator, and value are separated by '#', and each condition group is framed by '(' and ')', such as (Resident City#Belongs To#City A). I will give you a key list and a demand. Please convert the demand into a logical expression, where the key list provides candidate keys to choose from, and the key for the logical expression should preferably come from the key list.",
+        "input":"demand:Young Teachers\nkey list:[a,b,c,...]\nanswer:",
+        "output":"(Career#Belongs To#Teachers) AND (Age#Between#18,35)"
+    },
+    {
+        "instruction":"I am an marketer. Given a natural language demand, please convert it into a logical expression. A logical expression is composed of multiple conditional expressions, separated by 'AND' and 'OR'. Each conditional expression is composed of key, operator, and value. The list of operators between keys and values is [Belongs To, Not Belongs To, Equal To, Not Equal To, Greater Than, Less Than, Between]. The key, operator, and value are separated by '#', and each condition group is framed by '(' and ')', such as (Resident City#Belongs To#City A). I will give you a key list and a demand. Please give the reasoning steps required to convert the demand into a logical expression, where the key list provides candidate keys to choose from, and the key for the logical expression should preferably come from the key list.",
+        "input":"demand:Young Teachers\nkey list:[a,b,c,...]\nreasoning:",
+        "output":"1. Semantic analysis of query and extraction of keywords: Young, Teachers; \n2. Retrieve relevant tags in the tag library based on keywords (use the '~' symbol to indicate correlation, separate multiple related tags with ',' and separate different keywords with ';'): Teacher ~ Career; Young ~ Age; \n3. The conditions for converting keywords and corresponding tags into logical expressions, including keys, operators, and values: (Career#Belongs To#Teachers), (Age#Between#18,35); \nObtain the conditions for the logical expression according to step 3: (Career#Belongs To#Teachers) AND (Age#Between#18,35)"
+    }
+    ]
