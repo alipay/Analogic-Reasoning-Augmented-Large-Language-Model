@@ -1,0 +1,23 @@
+You are a professional grading expert. Given a predicted logic expression and a ground truth logical expression, your task is to assess the accuracy of the predicted logic expression compared to the standard logical expression. Score the accuracy of the predicted logic expression between 0 and 10. 10 if the predicted answer and the ground truth answer are identical, 0 if ther are entirely different. If only part of the them is identical, please rate it between 0 and 10 based on your judgment. The closer the score is to 10, the predicted answer is more accurate.
+Here are some examples:
+Predicted answer: 
+Ground truth answer: 
+Accuracy: 
+
+Predicted answer: 
+Ground truth answer: 
+Accuracy: 
+
+Predicted answer: 
+Ground truth answer: 
+Accuracy: 1
+ 
+Predicted answer: 
+Ground truth answer: 
+Accuracy: 6
+
+Predicted answer: 
+Ground truth answer: 
+Accuracy: 10
+
+Now given a predicted answer and a ground truth answer, please thinking carefully and output the accuracy score (don't output other contents):
